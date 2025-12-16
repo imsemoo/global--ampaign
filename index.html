@@ -4,53 +4,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- =========================
+       Primary SEO
+  ========================== -->
   <title>الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط</title>
   <meta name="description"
-    content="ندعو المجتمع الدولي لتحويل صمت الاعتقال إلى ضغوط حقيقية تحمي الحقوق وتعيد صوت الأسرى إلى واجهة النضال." />
-  <meta property="og:title" content="الحملة العالمية لإنقاذ الأسرى" />
-  <meta property="og:description"
-    content="من الصمت إلى الضغط؛ حملة إنسانية عالمية تترجم معاناة الأسرى إلى ضغوط سياسية وقانونية موسعة." />
-  <meta property="og:image" content="assets/img/hero.png" />
+    content="حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي." />
+  <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0b0f0d" />
+
+  <!-- =========================
+       Canonical (UPDATE)
+  ========================== -->
+  <!-- TODO: ضع رابط الموقع الحقيقي -->
+  <link rel="canonical" href="https://example.org/" />
+
+  <!-- =========================
+       Open Graph (Facebook / WhatsApp / LinkedIn)
+  ========================== -->
+  <meta property="og:site_name" content="الحملة العالمية لإنقاذ الأسرى" />
+  <meta property="og:type" content="website" />
+  <!-- TODO: ضع رابط الموقع الحقيقي -->
+  <meta property="og:url" content="https://example.org/" />
+  <meta property="og:title" content="الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط" />
+  <meta property="og:description"
+    content="حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي." />
+  <!-- OG Image (UPDATE PATH + SIZE) -->
+  <!-- يفضّل 1200×630 -->
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+  <meta property="og:image:secure_url" content="assets/img/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="من الصمت إلى الضغط - الحملة العالمية لإنقاذ الأسرى" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <!-- =========================
+       Twitter Card
+  ========================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط" />
+  <meta name="twitter:description"
+    content="حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي." />
+  <meta name="twitter:image" content="assets/img/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="من الصمت إلى الضغط - الحملة العالمية لإنقاذ الأسرى" />
+
+  <!-- =========================
+       Fonts + CSS
+  ========================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@500&display=swap"
     rel="stylesheet" />
+
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- =========================
+       Structured Data (JSON-LD) (UPDATE URL + LOGO)
+  ========================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "الحملة العالمية لإنقاذ الأسرى",
+    "description": "حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي.",
+    "inLanguage": "ar",
+    "url": "https://example.org/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "الحملة العالمية لإنقاذ الأسرى",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://example.org/assets/img/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- Landing-only tweaks (small, non-destructive) -->
+  <style>
+    /* Keep it scoped to landing to avoid harming other pages if later reused */
+    .landing-nav a[href^="#"] {
+      cursor: pointer;
+    }
+
+    .landing-share-btn {
+      white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        justify-content: flex-start;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <a class="skip-link" href="#main-content">تخطي إلى المحتوى</a>
 
   <header class="main-header">
-    <div class="container ">
+    <div class="container">
       <div class="header-inner">
         <div class="brand">
-          <img src="./assets/img/logo.png" alt="" width="220">
+          <img src="./assets/img/logo.png" alt="شعار الحملة" width="220">
         </div>
-        <nav aria-label="روابط الحملة">
+
+        <!-- One-page navigation only -->
+        <nav aria-label="أقسام الصفحة" class="landing-nav">
           <ul class="nav-links">
-            <li><a href="index.html" class="active">الرئيسية</a></li>
-            <li><a href="about.html">عن الحملة</a></li>
-            <li><a href="goals.html">الأهداف</a></li>
-            <li><a href="audience.html">الفئات المستهدفة</a></li>
-            <li><a href="take-action.html">شارك الآن</a></li>
-            <li><a href="guide.html">دليل الحملة</a></li>
-            <li><a href="media-kit.html">مركز الإعلام</a></li>
-            <li><a href="contact.html">تواصل</a></li>
+            <li><a href="#home" class="active">الرئيسية</a></li>
+            <li><a href="#message">الرسالة</a></li>
+            <li><a href="#paths">المسارات</a></li>
+            <li><a href="#timeline">الخطة</a></li>
+            <li><a href="#audience">الفئات</a></li>
+            <li><a href="#media">مركز الإعلام</a></li>
           </ul>
         </nav>
+
         <div class="nav-actions">
-          <a class="btn btn-primary" href="take-action.html">شارك الآن</a>
+          <!-- Share Now = Copy Link -->
+          <button class="btn btn-primary landing-share-btn" type="button" id="copyLinkBtn">
+            شارك الآن
+          </button>
         </div>
       </div>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="container">
         <div class="hero-grid">
           <div class="hero-text">
@@ -63,31 +149,30 @@
               والعمل من أجل الإفراج عن النساء والأطفال والمعتقلين الإداريين،
               ودعم مسار المساءلة.
             </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="take-action.html">ابدأ التحرك</a>
-              <a class="btn btn-outline" href="guide.html">دليل الحملة لمدة 6 أشهر</a>
-            </div>
+
+            <!-- CTA buttons removed (Landing) -->
             <div class="trust-indicators">
               <span>• صوت الأسرى</span>
               <span>• توثيق مسؤول</span>
               <span>• ضغط دولي فعّال</span>
             </div>
           </div>
+
           <div class="hero-visual" aria-hidden="true">
-            <img src="assets/img/hero.png" alt="صورة رمزية لعالم مظلم وعلامات ضغط دولية" />
+            <img src="assets/img/hero.png" alt="صورة رمزية: خريطة العالم وسلسلة مكسورة بشكل رمزي" />
             <!-- IMAGE: خطوط خافتة لخريطة العالم وسلسلة مكسورة على خلفية سوداء غير مروعة -->
           </div>
         </div>
       </div>
     </section>
 
-
-    <section class="campaign-core">
+    <section class="campaign-core" id="message">
       <div class="container">
         <div class="section-title">
           <h2>الرسالة والأهداف</h2>
           <p>مضمون الحملة ينبض بالتزام إنساني لرفع راية الحقوق وفتح نوافذ الضغط.</p>
         </div>
+
         <div class="editorial-grid">
           <article class="editorial-block">
             <span class="editorial-number">01</span>
@@ -99,6 +184,7 @@
               </p>
             </div>
           </article>
+
           <article class="editorial-block">
             <span class="editorial-number">02</span>
             <div class="editorial-content">
@@ -109,6 +195,7 @@
               </p>
             </div>
           </article>
+
           <article class="editorial-block">
             <span class="editorial-number">03</span>
             <div class="editorial-content">
@@ -125,12 +212,13 @@
       </div>
     </section>
 
-    <section class="action-paths">
+    <section class="action-paths" id="paths">
       <div class="container">
         <div class="section-title">
           <h2>كيف يمكنك أن تُحدث أثراً</h2>
           <p>مسارات واضحة تقرّب الضغط من الواقع وتمنحك خارطة مسؤولية.</p>
         </div>
+
         <div class="path-list">
           <article class="path-block">
             <header class="path-block__header">
@@ -147,8 +235,10 @@
               <li>دعم التغطية الدولية</li>
             </ul>
             <hr />
-            <a class="path-link" href="take-action.html#media">ابدأ من هنا →</a>
+            <!-- One-page: scroll to Media -->
+            <a class="path-link" href="#media">اذهب إلى مركز الإعلام →</a>
           </article>
+
           <article class="path-block">
             <header class="path-block__header">
               <span class="path-icon"><i class="fas fa-users"></i></span>
@@ -164,8 +254,9 @@
               <li>إيصال الصوت للمؤسسات</li>
             </ul>
             <hr />
-            <a class="path-link" href="take-action.html#field">ابدأ من هنا →</a>
+            <a class="path-link" href="#timeline">اطّلع على الخطة →</a>
           </article>
+
           <article class="path-block">
             <header class="path-block__header">
               <span class="path-icon"><i class="fas fa-gavel"></i></span>
@@ -181,8 +272,9 @@
               <li>تحريك المواقف الدولية</li>
             </ul>
             <hr />
-            <a class="path-link" href="take-action.html#political">ابدأ من هنا →</a>
+            <a class="path-link" href="#audience">تعرّف على الفئات →</a>
           </article>
+
           <article class="path-block">
             <header class="path-block__header">
               <span class="path-icon"><i class="fas fa-balance-scale"></i></span>
@@ -198,18 +290,19 @@
               <li>إشراك المؤسسات المختصة</li>
             </ul>
             <hr />
-            <a class="path-link" href="take-action.html#legal">ابدأ من هنا →</a>
+            <a class="path-link" href="#message">ارجع للرسالة →</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="timeline-section">
+    <section class="timeline-section" id="timeline">
       <div class="container">
         <div class="section-title">
           <h2>خطة عمل تمتد لستة أشهر</h2>
-          <p>خمس خطوات مصممة لتراكم الضغط الدولي وتحويله إلى تغيير ملموس.</p>
+          <p>خطوات مصممة لتراكم الضغط الدولي وتحويله إلى تغيير ملموس.</p>
         </div>
+
         <div class="timeline-preview">
           <div class="timeline-track" aria-hidden="true">
             <span>1</span>
@@ -219,6 +312,7 @@
             <span>5</span>
             <span>6</span>
           </div>
+
           <div class="timeline-steps">
             <article class="timeline-step">
               <p class="timeline-label">التعريف بقضية الأسرى</p>
@@ -240,18 +334,16 @@
             </article>
           </div>
         </div>
-        <div class="timeline-cta">
-          <a class="btn btn-outline" href="guide.html">عرض الخطة كاملة</a>
-        </div>
       </div>
     </section>
 
-    <section class="target-audience">
+    <section class="target-audience" id="audience">
       <div class="container">
         <div class="section-title">
           <h2>لمن نخاطب هذا العالم</h2>
-          <p>أشكال التضامن تتبدى حسب الجمهور، والحملة تضع كل صوت في المكان المناسب.</p>
+          <p>الحملة تضع كل صوت في المكان المناسب لتكبير الأثر وتراكم الضغط.</p>
         </div>
+
         <div class="audience-grid">
           <article>
             <h3>الرأي العام الغربي</h3>
@@ -267,24 +359,21 @@
           </article>
           <article>
             <h3>المؤثرون</h3>
-            <p>توسيع دائرة التأثير وتؤكد رسالة العدالة في شبكات أوسع.</p>
+            <p>توسيع دائرة التأثير وتأكيد الرسالة ضمن شبكات أوسع.</p>
           </article>
           <article>
             <h3>النشطاء</h3>
-            <p>تحويل التضامن إلى فعل مدروس ينشر ضغطاً متراكمًا.</p>
+            <p>تحويل التضامن إلى فعل مدروس يصنع ضغطاً متراكمًا.</p>
           </article>
           <article>
             <h3>البرلمانيون</h3>
-            <p>نقل القضية للمؤسسات التشريعية وتأكيدها في ملفات السياسة الخارجية.</p>
+            <p>نقل القضية للمؤسسات التشريعية وتثبيتها في ملفات السياسة الخارجية.</p>
           </article>
-        </div>
-        <div class="audience-link">
-          <a class="btn btn-primary" href="audience.html">تعرف على دورك</a>
         </div>
       </div>
     </section>
 
-    <section class="media-center">
+    <section class="media-center" id="media">
       <div class="container">
         <div class="media-grid">
           <div class="media-intro">
@@ -292,121 +381,130 @@
             <h2>مركز الإعلام</h2>
             <p>
               مجموعة من الملفات والمواد التي تخاطب المؤسسات الإعلامية والحقوقية بلهجة واضحة
-              وتحترم عمق الأزمة. نحرص على أن تكون الرسائل متوازنة، دقيقة، وجاهزة للنشر الفوري.
+              وتحترم عمق الأزمة. الرسائل متوازنة، دقيقة، وقابلة للنشر.
             </p>
-            <a class="btn btn-outline btn-outline--light" href="media-kit.html">الدخول إلى مركز الإعلام</a>
           </div>
+
           <div class="media-assets">
             <article class="media-asset">
               <span class="media-icon"><i class="fas fa-bullhorn"></i></span>
               <div>
-                <h3>حملة صوت الأسرى</h3>
-                <p>بيانات صحفية معدّة من فريق حقوقي وترويجي جاهزة للترجمة والانتشار.</p>
+                <h3>حزمة بيانات صحفية</h3>
+                <p>صياغات جاهزة للاقتباس والمشاركة مع وسائل الإعلام.</p>
               </div>
             </article>
             <article class="media-asset">
               <span class="media-icon"><i class="fas fa-file-alt"></i></span>
               <div>
-                <h3>دليل البيانات</h3>
-                <p>قوالب بيانات وتقارير متميزة تلائم المؤسسات الإعلامية الكبرى.</p>
+                <h3>قوالب منشورات</h3>
+                <p>نصوص قصيرة ومسؤولة قابلة للترجمة والنشر السريع.</p>
               </div>
             </article>
             <article class="media-asset">
               <span class="media-icon"><i class="fas fa-network-wired"></i></span>
               <div>
-                <h3>شبكة المراسلين</h3>
-                <p>نصوص مصاغة للمنصات الرقمية والفضائيات الدولية تتحدث عن الضغوط القانونية.</p>
+                <h3>رسائل تواصل</h3>
+                <p>نماذج تواصل مع صحفيين ومؤسسات وشخصيات عامة.</p>
               </div>
             </article>
             <p class="media-note">
-              يتم تجديد الحقيبة أسبوعياً مع تقارير جديدة ترصد الدفاع عن الأسرى وحالاتهم.
+              يتم تحديث المواد وفق دورة أسبوعية لضمان الاتساق والأثر.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="final-cta">
-      <div class="container final-grid">
-        <div class="final-copy">
-          <p class="section-kicker">ضغط عالمي</p>
-          <h2>الصمت اختيار… فماذا تختار؟</h2>
-          <p>
-            انضم إلى الحملة واستخدم صوتك في تضييق الخناق على مظاهر الإعلام المخفف للعدالة؛
-            كل رسالة، منشور، أو إجراء يخلق ضغطاً إضافياً نحو التغيير.
-          </p>
-          <ul class="final-list">
-            <li><i class="fas fa-check"></i> تحديثات استراتيجية حول مجريات الحملة.</li>
-            <li><i class="fas fa-check"></i> دعوات لفعاليات سلمية وتنسيق مع فئات مختارة.</li>
-            <li><i class="fas fa-check"></i> مواد رقمية قابلة للمشاركة فوراً.</li>
-          </ul>
-        </div>
-        <div class="final-form-wrapper">
-          <form id="cta-form" class="cta-form">
-            <label>
-              البريد الإلكتروني
-              <input type="email" name="email" required placeholder="name@example.com" />
-            </label>
-            <label>
-              الدولة (اختياري)
-              <input type="text" name="country" placeholder="الدولة" />
-            </label>
-            <button type="submit" class="btn btn-primary">شارك الآن</button>
-          </form>
-          <p class="final-form-note">
-            لا نشارك بياناتك، ونرسل فقط دعوات رسمية ومحتوى يدعم ضغوطك.
-          </p>
+    <!-- Toast for Copy Link -->
+    <div class="toast-container">
+      <div id="copy-toast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive"
+        aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">تم نسخ رابط الصفحة.</div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+            aria-label="أغلق"></button>
         </div>
       </div>
-      <div class="toast-container">
-        <div id="cta-toast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive"
-          aria-atomic="true">
-          <div class="d-flex">
-            <div class="toast-body">تم استلام طلبك. شكراً لانضمامك.</div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-              aria-label="أغلق"></button>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <img src="./assets/img/logo w.png" class="mb-3" alt="" width="220">
-          <p class="footer-brand-copy">
-            حملة إنسانية عالمية تحدث تأثيراً عبر الضغط المنظم، وتضع الأدوات والمواد في خدمة الحقيقة.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-heading">روابط سريعة</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="about.html">عن الحملة</a></li>
-            <li><a href="guide.html">دليل الحملة</a></li>
-            <li><a href="audience.html">الفئات المستهدفة</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-heading">تواصل مباشر</h4>
-          <p>البريد: hello@pressoncampaign.org</p>
-          <p>الهاتف الدولي: +972 52 123 4567</p>
-          <p>تحديثات أسبوعية من مركز الإعلام</p>
-        </div>
-        <div class="footer-cta">
-          <p>لا تدع الضغوط تتبدد، اجعل قرارك صوتاً قويّاً.</p>
-          <a class="btn btn-primary" href="take-action.html">شارك الآن</a>
-        </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding-block:24px;">
+        <img src="./assets/img/logo w.png" alt="شعار الحملة" width="220" />
+        <p class="footer-note" style="margin:0;">
+          © 2026 من الصمت إلى الضغط · الحملة العالمية لإنقاذ الأسرى.
+        </p>
       </div>
-      <p class="footer-note">© 2026 من الصمت إلى الضغط · حملة عالمية ضد الصمت.</p>
     </div>
   </footer>
 
-  <script src="assets/js/jquery-3.7.1.min.js" defer></script>
   <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/js/script.js" defer></script>
+
+  <!-- Minimal JS: copy link only -->
+  <script defer>
+    (() => {
+      const SITE_URL = window.location.href.split('#')[0]; // copies current page URL without hash
+      const btn = document.getElementById('copyLinkBtn');
+      const toastEl = document.getElementById('copy-toast');
+
+      const showToast = () => {
+        if (!toastEl || !window.bootstrap) return;
+        const t = bootstrap.Toast.getOrCreateInstance(toastEl, { delay: 1800 });
+        t.show();
+      };
+
+      const copyText = async (text) => {
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            return true;
+          }
+        } catch (_) { /* ignore */ }
+
+        // Fallback
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.top = '-1000px';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        return ok;
+      };
+
+      btn?.addEventListener('click', async () => {
+        const ok = await copyText(SITE_URL);
+        if (ok) showToast();
+      });
+
+      // Optional: highlight active nav link on scroll (no heavy logic)
+      const links = document.querySelectorAll('.landing-nav a[href^="#"]');
+      const sections = Array.from(links)
+        .map(a => document.querySelector(a.getAttribute('href')))
+        .filter(Boolean);
+
+      const setActive = () => {
+        const y = window.scrollY + 120;
+        let current = sections[0]?.id || 'home';
+
+        for (const s of sections) {
+          if (s.offsetTop <= y) current = s.id;
+        }
+
+        links.forEach(a => {
+          const target = (a.getAttribute('href') || '').slice(1);
+          a.classList.toggle('active', target === current);
+        });
+      };
+
+      window.addEventListener('scroll', () => window.requestAnimationFrame(setActive), { passive: true });
+      setActive();
+    })();
+  </script>
 </body>
 
 </html>

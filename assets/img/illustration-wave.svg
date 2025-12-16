@@ -1,0 +1,17 @@
+﻿<svg width="240" height="160" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="waveTitle">
+  <title id="waveTitle">Soft wave illustration</title>
+  <defs>
+    <linearGradient id="g1" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#dc343c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f7f3ee" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#183d28" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="160" rx="26" fill="url(#g2)"/>
+  <path d="M0 120 C60 80 120 160 180 120 L240 120 L240 160 L0 160 Z" fill="url(#g1)" opacity="0.9"/>
+  <circle cx="60" cy="40" r="24" fill="#dc343c" opacity="0.65"/>
+  <circle cx="180" cy="50" r="18" fill="#183d28" opacity="0.6"/>
+</svg>

@@ -128,16 +128,16 @@
         </nav>
 
         <div class="nav-actions nav-actions--desktop">
-          <button class="btn btn-primary landing-share-btn" type="button" id="copyLinkBtn">
-            شارك الآن
-          </button>
+          <a class="btn btn-primary landing-share-btn" href="#contact" id="contactBtn">
+            تواصل معنا
+          </a>
         </div>
 
         <!-- Mobile controls -->
         <div class="nav-actions nav-actions--mobile">
-          <button class="btn btn-primary landing-share-btn" type="button" id="copyLinkBtnMobile">
-            شارك الآن
-          </button>
+          <a class="btn btn-primary landing-share-btn" href="#contact" id="contactBtnMobile">
+            تواصل معنا
+          </a>
 
           <button class="nav-toggle" type="button" id="navToggle" aria-label="فتح القائمة" aria-controls="mobileMenu"
             aria-expanded="false">
@@ -349,31 +349,37 @@
 
         <div class="timeline-preview">
           <div class="timeline-track" aria-hidden="true">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
+            <span class="timeline-dot active" data-step="1">1</span>
+            <span class="timeline-dot disabled" data-step="2">2</span>
+            <span class="timeline-dot disabled" data-step="3">3</span>
+            <span class="timeline-dot disabled" data-step="4">4</span>
+            <span class="timeline-dot disabled" data-step="5">5</span>
+            <span class="timeline-dot disabled" data-step="6">6</span>
           </div>
 
           <div class="timeline-steps">
-            <article class="timeline-step">
-              <p class="timeline-label">التعريف بقضية الأسرى</p>
+            <article class="timeline-step" data-step="1">
+              <div class="timeline-note message" role="status" aria-live="polite">
+                <span class="timeline-note-icon"><i class="fas fa-clock"></i></span>
+                <div class="timeline-note-body">
+                  <p class="note-title">قريباً — خطة الشهر الأول</p>
+                  <p class="note-text">انتظرونا للحصول على تفاصيل المرحلة الأولى</p>
+                </div>
+              </div>
             </article>
-            <article class="timeline-step">
+            <article class="timeline-step backend-hidden" data-step="2">
               <p class="timeline-label">كفى سادية وإجراماً</p>
             </article>
-            <article class="timeline-step">
+            <article class="timeline-step backend-hidden" data-step="3">
               <p class="timeline-label">يا أحرار العالم تحركوا</p>
             </article>
-            <article class="timeline-step">
+            <article class="timeline-step backend-hidden" data-step="4">
               <p class="timeline-label">أوقفوا اختطاف النساء والأطفال</p>
             </article>
-            <article class="timeline-step">
+            <article class="timeline-step backend-hidden" data-step="5">
               <p class="timeline-label">أوقفوا العزل الانفرادي</p>
             </article>
-            <article class="timeline-step">
+            <article class="timeline-step backend-hidden" data-step="6">
               <p class="timeline-label">لن نخذل الأسرى</p>
             </article>
           </div>
@@ -471,6 +477,34 @@
       </div>
     </div>
   </main>
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>تواصل معنا</h2>
+        <p>لأي استفسار أو تعاون تواصلوا معنا عبر القنوات التالية. نرد بسرعة ومهنية.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="icon-badge contact-icon"><i class="fas fa-envelope"></i></span>
+          <h3>البريد الإلكتروني</h3>
+          <p><a href="mailto:info@freeprisoners.net">info@freeprisoners.net</a></p>
+        </div>
+
+        <div class="contact-card">
+          <span class="icon-badge contact-icon"><i class="fab fa-telegram-plane"></i></span>
+          <h3>تلغرام</h3>
+          <p><a href="https://t.me/test" target="_blank" rel="noopener noreferrer">@test</a></p>
+        </div>
+
+        <div class="contact-card">
+          <span class="icon-badge contact-icon"><i class="fas fa-phone-alt"></i></span>
+          <h3>هاتف</h3>
+          <p><a href="tel:+1234567890">+1234567890</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container">

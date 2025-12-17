@@ -1174,7 +1174,7 @@ body.is-menu-open {
   }
 
   .hero {
-    border-radius: var(--radius-lg);
+    border-radius: 0 0 var(--radius-lg);
   }
 
   .hero-actions {

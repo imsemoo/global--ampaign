@@ -853,6 +853,7 @@ body.is-menu-open {
   display: flex;
   gap: var(--space-3);
   align-items: start;
+  flex-wrap: wrap;
 }
 
 .timeline-step {
@@ -870,6 +871,10 @@ body.is-menu-open {
   opacity: 1;
   transform: translateY(0) scale(1);
   color: var(--brand-ink);
+}
+
+.timeline-step:first-child {
+  width: 100%;
 }
 
 /* Hover / focus lift for visible steps */
@@ -894,35 +899,36 @@ body.is-menu-open {
 /* Message-style timeline note (large, icon, friendly tone) */
 .timeline-note.message {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 18px;
-
-  max-width: 980px;
+  gap: 12px;
   margin-inline: auto;
-  text-align: right;
+  text-align: center;
 }
 
 .timeline-note-icon {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: 14px;
   display: grid;
   place-items: center;
   background: linear-gradient(145deg, var(--brand-red), #b31f28);
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   box-shadow: 0 12px 36px rgba(220, 52, 60, 0.28);
   flex-shrink: 0;
 }
 
 .timeline-note-body .note-title {
   margin: 0;
-  font-weight: 800;
-  color: #0b0f0d;
-  font-size: 1.15rem;
+  font-weight: 900;
+  color: #777;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  letter-spacing: 0.02em;
 }
 
 .timeline-note-body .note-text {
+  /* kept for fallback if used elsewhere */
   margin: 6px 0 0;
   color: var(--brand-muted);
   font-weight: 700;

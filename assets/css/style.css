@@ -1175,6 +1175,11 @@ body.is-menu-open {
 
   .hero {
     border-radius: 0 0 var(--radius-lg);
+    padding-top: var(--space-4);
+  }
+
+  .media-center {
+    padding-bottom: 0;
   }
 
   .hero-actions {

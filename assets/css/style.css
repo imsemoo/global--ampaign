@@ -327,7 +327,7 @@ section {
 .nav-toggle {
   width: 46px;
   height: 46px;
-  border-radius: 16px;
+  border-radius: 12px;
   border: 1px solid rgba(24, 61, 40, 0.18);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
@@ -463,6 +463,11 @@ section {
   line-height: 1.6;
 }
 
+.landing-share-btn {
+  border-radius: 12px;
+  padding: 16px !important;
+}
+
 /* Scroll lock */
 body.is-menu-open {
   overflow: hidden;
@@ -489,10 +494,12 @@ body.is-menu-open {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   .brand img {
     width: 140px;
   }
+
+
 
   .landing-share-btn {
     padding: 0.7rem 1.1rem;
@@ -1110,6 +1117,7 @@ body.is-menu-open {
   margin: 0;
   color: rgba(255, 255, 255, 0.86);
   font-weight: 700;
+  direction: ltr;
 }
 
 .contact-card a {

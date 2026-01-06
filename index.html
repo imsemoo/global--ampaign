@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,9 +9,9 @@
   <!-- =========================
        Primary SEO
   ========================== -->
-  <title>الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط</title>
+  <title>Free Prisoners Global Campaign | Rights for All</title>
   <meta name="description"
-    content="حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي." />
+    content="A global human-rights coalition demanding the release of unjustly detained people and accountability for unlawful detention practices." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0b0f0d" />
 
@@ -24,31 +24,31 @@
   <!-- =========================
        Open Graph (Facebook / WhatsApp / LinkedIn)
   ========================== -->
-  <meta property="og:site_name" content="الحملة العالمية لإنقاذ الأسرى" />
+  <meta property="og:site_name" content="Free Prisoners Global Campaign" />
   <meta property="og:type" content="website" />
   <!-- TODO: ضع رابط الموقع الحقيقي -->
   <meta property="og:url" content="https://example.org/" />
-  <meta property="og:title" content="الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط" />
+  <meta property="og:title" content="Free Prisoners Global Campaign | Rights for All" />
   <meta property="og:description"
-    content="حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي." />
+    content="A global human-rights coalition demanding the release of unjustly detained people and accountability for unlawful detention practices." />
   <!-- OG Image (UPDATE PATH + SIZE) -->
   <!-- يفضّل 1200×630 -->
   <meta property="og:image" content="assets/img/og-cover.jpg" />
   <meta property="og:image:secure_url" content="assets/img/og-cover.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="من الصمت إلى الضغط - الحملة العالمية لإنقاذ الأسرى" />
-  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:image:alt" content="From Silence to Pressure - Free Prisoners Global Campaign" />
+  <meta property="og:locale" content="en_US" />
 
   <!-- =========================
        Twitter Card
   ========================== -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط" />
+  <meta name="twitter:title" content="Free Prisoners Global Campaign | Rights for All" />
   <meta name="twitter:description"
-    content="حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي." />
+    content="A global human-rights coalition demanding the release of unjustly detained people and accountability for unlawful detention practices." />
   <meta name="twitter:image" content="assets/img/og-cover.jpg" />
-  <meta name="twitter:image:alt" content="من الصمت إلى الضغط - الحملة العالمية لإنقاذ الأسرى" />
+  <meta name="twitter:image:alt" content="From Silence to Pressure - Free Prisoners Global Campaign" />
 
   <!-- =========================
        Fonts + CSS
@@ -70,13 +70,13 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "الحملة العالمية لإنقاذ الأسرى",
-    "description": "حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي.",
-    "inLanguage": "ar",
+    "name": "Free Prisoners Global Campaign",
+    "description": "A global human-rights coalition demanding the release of unjustly detained people and accountability for unlawful detention practices.",
+    "inLanguage": "en",
     "url": "https://example.org/",
     "publisher": {
       "@type": "Organization",
-      "name": "الحملة العالمية لإنقاذ الأسرى",
+      "name": "Free Prisoners Global Campaign",
       "logo": {
         "@type": "ImageObject",
         "url": "https://example.org/assets/img/logo.png"
@@ -105,43 +105,52 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main-content">تخطي إلى المحتوى</a>
+  <a class="skip-link" data-i18n="header.skipLink" href="#main-content">Skip to main content</a>
 
   <header class="main-header">
     <div class="container">
       <div class="header-inner header-inner--landing">
         <div class="brand">
-          <a href="#home" aria-label="العودة إلى بداية الصفحة">
-            <img src="./assets/img/logo.png" alt="شعار الحملة" width="220">
+          <a href="#home" data-i18n-aria="header.brandLabel"
+            aria-label="Go to the Free Prisoners Global Campaign homepage">
+            <img src="./assets/img/logo.png" data-i18n-alt="header.brandLogoAlt"
+              alt="Free Prisoners Global Campaign logo" width="220">
           </a>
         </div>
 
         <!-- Desktop nav -->
-        <nav aria-label="أقسام الصفحة" class="landing-nav landing-nav--desktop">
+        <nav aria-label="Primary navigation" class="landing-nav landing-nav--desktop" data-i18n-aria="header.navAria">
           <ul class="nav-links">
-            <li><a href="#home" class="active">الرئيسية</a></li>
-            <li><a href="#message">الرسالة</a></li>
-            <li><a href="#paths">المسارات</a></li>
-            <li><a href="#timeline">الخطة</a></li>
-            <li><a href="#audience">الفئات</a></li>
-            <li><a href="#media">مركز الإعلام</a></li>
+            <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+            <li><a href="#message" data-i18n="nav.message">Our message</a></li>
+            <li><a href="#paths" data-i18n="nav.paths">Action pathways</a></li>
+            <li><a href="#timeline" data-i18n="nav.timeline">Timeline</a></li>
+            <li><a href="#audience" data-i18n="nav.audience">Audience</a></li>
+            <li><a href="#media" data-i18n="nav.media">Media center</a></li>
           </ul>
         </nav>
 
         <div class="nav-actions nav-actions--desktop">
-          <a class="btn btn-primary landing-share-btn" href="#contact" id="contactBtn">
-            تواصل معنا
+          <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to Arabic">AR</button>
+
+          <a class="btn btn-primary landing-share-btn" href="#contact" id="contactBtn"
+            data-i18n="header.navActionContact">
+            Contact the campaign
           </a>
         </div>
 
         <!-- Mobile controls -->
         <div class="nav-actions nav-actions--mobile">
+          <button class="btn btn-outline-light btn-sm lang-toggle me-2" type="button" data-lang-toggle
+            aria-label="Switch to Arabic">
+            AR
+          </button>
           <a class="btn btn-primary landing-share-btn" href="#contact" id="contactBtnMobile">
             <i class="fa-solid fa-headset"></i>
           </a>
 
-          <button class="nav-toggle" type="button" id="navToggle" aria-label="فتح القائمة" aria-controls="mobileMenu"
-            aria-expanded="false">
+          <button class="nav-toggle" type="button" id="navToggle" data-i18n-aria="header.navToggle"
+            aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
             <span class="nav-toggle__bars" aria-hidden="true"></span>
           </button>
         </div>
@@ -152,28 +161,32 @@
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
       <div class="mobile-menu__backdrop" data-close="true"></div>
 
-      <aside class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="قائمة التنقل">
+      <aside class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Mobile navigation"
+        data-i18n-aria="mobile.menuLabel">
         <div class="mobile-menu__header">
-          <img src="./assets/img/logo.png" alt="شعار الحملة" width="170">
-          <button class="mobile-menu__close" type="button" data-close="true" aria-label="إغلاق القائمة">
+          <img src="./assets/img/logo.png" data-i18n-alt="header.brandLogoAlt" alt="Free Prisoners Global Campaign logo"
+            width="170">
+          <button class="mobile-menu__close" type="button" data-close="true" data-i18n-aria="mobile.closeMenu"
+            aria-label="Close navigation menu">
             <i class="fas fa-times"></i>
           </button>
         </div>
 
-        <nav class="mobile-menu__nav" aria-label="أقسام الصفحة (موبايل)">
-          <a href="#home" class="mobile-menu__link">الرئيسية</a>
-          <a href="#message" class="mobile-menu__link">الرسالة</a>
-          <a href="#paths" class="mobile-menu__link">المسارات</a>
-          <a href="#timeline" class="mobile-menu__link">الخطة</a>
-          <a href="#audience" class="mobile-menu__link">الفئات</a>
-          <a href="#media" class="mobile-menu__link">مركز الإعلام</a>
+        <nav class="mobile-menu__nav" aria-label="Mobile navigation links" data-i18n-aria="mobile.navAria">
+          <a href="#home" class="mobile-menu__link" data-i18n="nav.home">Home</a>
+          <a href="#message" class="mobile-menu__link" data-i18n="nav.message">Our message</a>
+          <a href="#paths" class="mobile-menu__link" data-i18n="nav.paths">Action pathways</a>
+          <a href="#timeline" class="mobile-menu__link" data-i18n="nav.timeline">Timeline</a>
+          <a href="#audience" class="mobile-menu__link" data-i18n="nav.audience">Audience</a>
+          <a href="#media" class="mobile-menu__link" data-i18n="nav.media">Media center</a>
         </nav>
 
         <div class="mobile-menu__footer">
-          <button class="btn btn-primary w-100" type="button" id="copyLinkBtnMobile2">
-            نسخ رابط الصفحة
+          <button class="btn btn-primary w-100" type="button" id="copyLinkBtnMobile2" data-i18n="mobile.copyButton">
+            Copy page link
           </button>
-          <p class="mobile-menu__hint">انسخ الرابط وشاركه على واتساب أو فيسبوك أو تويتر.</p>
+          <p class="mobile-menu__hint" data-i18n="mobile.hint">Share this page to keep the campaign call for justice
+            visible across your networks.</p>
         </div>
       </aside>
     </div>
@@ -185,26 +198,26 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-text">
-            <p class="section-kicker">من الصمت إلى الضغط</p>
-            <h1>الحملة العالمية لإنقاذ الأسرى</h1>
-            <p class="hero-subtitle">
-              حملة إعلامية إنسانية عالمية تهدف إلى نقل قضية الأسرى من دائرة الصمت
-              إلى مساحة الضغط الدولي الفعّال، عبر كشف واقع السجون والانتهاكات،
-              والمطالبة بحماية الحقوق، وتحسين ظروف الاعتقال وفق القانون الدولي،
-              والعمل من أجل الإفراج عن النساء والأطفال والمعتقلين الإداريين،
-              ودعم مسار المساءلة.
+            <p class="section-kicker" data-i18n="hero.kicker">Solidarity for the detained</p>
+            <h1 data-i18n="hero.title">Free the prisoners, uphold their rights</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+              An international human-rights campaign turning silence into coordinated pressure, documenting prison
+              abuses,
+              demanding legal protection, and pushing for the release of unfairly detained women, children, and
+              administrative detainees.
             </p>
 
             <!-- CTA buttons removed (Landing) -->
             <div class="trust-indicators">
-              <span>• صوت الأسرى</span>
-              <span>• توثيق مسؤول</span>
-              <span>• ضغط دولي فعّال</span>
+              <span data-i18n="hero.trust1">• 120+ solidarity partners</span>
+              <span data-i18n="hero.trust2">• 40 documented testimonies</span>
+              <span data-i18n="hero.trust3">• 30 human-rights defenders</span>
             </div>
           </div>
 
           <div class="hero-visual" aria-hidden="true">
-            <img src="assets/img/hero.png" alt="صورة رمزية: خريطة العالم وسلسلة مكسورة بشكل رمزي" />
+            <img src="assets/img/hero.png" data-i18n-alt="hero.imageAlt"
+              alt="Symbolic illustration: world map with broken chain links" />
             <!-- IMAGE: خطوط خافتة لخريطة العالم وسلسلة مكسورة على خلفية سوداء غير مروعة -->
           </div>
         </div>
@@ -214,18 +227,19 @@
     <section class="campaign-core" id="message">
       <div class="container">
         <div class="section-title">
-          <h2>الرسالة والأهداف</h2>
-          <p>مضمون الحملة ينبض بالتزام إنساني لرفع راية الحقوق وفتح نوافذ الضغط.</p>
+          <h2 data-i18n="campaign.title">Campaign message and goals</h2>
+          <p data-i18n="campaign.description">The campaign rests on a human-rights commitment to elevate detainees’
+            rights and open windows for sustained pressure.</p>
         </div>
 
         <div class="editorial-grid">
           <article class="editorial-block">
             <span class="editorial-number">01</span>
             <div class="editorial-content">
-              <h3>رسالة الحملة</h3>
-              <p>
-                نعيد للأسرى وجههم أمام المجتمعات ونحوّل الصمت الدولي إلى مطالب واضحة
-                تحمي كرامتهم وتعيد لهم وجودهم في الخطاب الإنساني العالمي.
+              <h3 data-i18n="campaign.block1.title">Restore their voices</h3>
+              <p data-i18n="campaign.block1.description">
+                We bring detainees’ stories to global audiences, shifting silence into clear actions that protect their
+                dignity.
               </p>
             </div>
           </article>
@@ -233,10 +247,10 @@
           <article class="editorial-block">
             <span class="editorial-number">02</span>
             <div class="editorial-content">
-              <h3>لماذا الآن</h3>
-              <p>
-                التوتر المتصاعد خارج الحدود يضاعف معاناة الأسرى، لذا لا ننتظر الأمل
-                أن ينبع من الصمت؛ الضغط المنظم اليوم يحمي حقوقهم وغداً يخفف عن ذويهم.
+              <h3 data-i18n="campaign.block2.title">The urgency today</h3>
+              <p data-i18n="campaign.block2.description">
+                Escalating tensions worsen detainees’ suffering, so organized pressure today shields their rights and
+                eases the burden on families tomorrow.
               </p>
             </div>
           </article>
@@ -244,12 +258,12 @@
           <article class="editorial-block">
             <span class="editorial-number">03</span>
             <div class="editorial-content">
-              <h3>ما الذي نطالب به</h3>
+              <h3 data-i18n="campaign.block3.title">Our demands</h3>
               <ul>
-                <li>حماية الأسرى وكرامتهم</li>
-                <li>وقف الممارسات القاسية</li>
-                <li>الإفراج عن النساء والأطفال</li>
-                <li>محاسبة المسؤولين</li>
+                <li data-i18n="campaign.block3.list1">Protect detainees and their dignity</li>
+                <li data-i18n="campaign.block3.list2">End harsh treatment</li>
+                <li data-i18n="campaign.block3.list3">Release women and children</li>
+                <li data-i18n="campaign.block3.list4">Hold responsible actors accountable</li>
               </ul>
             </div>
           </article>
@@ -260,82 +274,84 @@
     <section class="action-paths" id="paths">
       <div class="container">
         <div class="section-title">
-          <h2>كيف يمكنك أن تُحدث أثراً</h2>
-          <p>مسارات واضحة تقرّب الضغط من الواقع وتمنحك خارطة مسؤولية.</p>
+          <h2 data-i18n="paths.title">Paths toward accountability</h2>
+          <p data-i18n="paths.description">Clear pathways bring pressure to life and give every supporter a sense of
+            responsibility.</p>
         </div>
 
         <div class="path-list">
           <article class="path-block">
             <header class="path-block__header">
               <span class="path-icon"><i class="fas fa-scroll"></i></span>
-              <h3>إعلامياً</h3>
-              <span class="path-pill">توثيق الرواية</span>
+              <h3 data-i18n="paths.item1.title">Document & amplify</h3>
+              <span class="path-pill" data-i18n="paths.item1.pill">Narrative documentation</span>
             </header>
-            <p class="path-summary">
-              رفع صوت الأسرى عبر تقارير منظمة يربط بين السرد الإنساني والضغط المؤسسي.
+            <p class="path-summary" data-i18n="paths.item1.summary">
+              Raising detainees’ voices through organized reporting that links personal accounts to institutional
+              pressure.
             </p>
             <ul>
-              <li>كسر الرواية السائدة</li>
-              <li>نشر القصص الموثقة</li>
-              <li>دعم التغطية الدولية</li>
+              <li data-i18n="paths.item1.list1">Challenge dominant narratives</li>
+              <li data-i18n="paths.item1.list2">Share verified testimonies</li>
+              <li data-i18n="paths.item1.list3">Support international coverage</li>
             </ul>
             <hr />
             <!-- One-page: scroll to Media -->
-            <a class="path-link" href="#media">اذهب إلى مركز الإعلام →</a>
+            <a class="path-link" href="#media" data-i18n="paths.item1.link">Explore the media hub →</a>
           </article>
 
           <article class="path-block">
             <header class="path-block__header">
               <span class="path-icon"><i class="fas fa-users"></i></span>
-              <h3>ميدانياً</h3>
-              <span class="path-pill">تعبئة الفضاء المدني</span>
+              <h3 data-i18n="paths.item2.title">Community mobilization</h3>
+              <span class="path-pill" data-i18n="paths.item2.pill">Civic partnerships</span>
             </header>
-            <p class="path-summary">
-              فعاليات سلمية تربط المجتمع المدني بأسرى اليوم وتؤكد التضامن الفاعل.
+            <p class="path-summary" data-i18n="paths.item2.summary">
+              Peaceful actions that connect civil society with detainees and demonstrate meaningful solidarity.
             </p>
             <ul>
-              <li>تنظيم فعاليات سلمية</li>
-              <li>إشراك المجتمع المدني</li>
-              <li>إيصال الصوت للمؤسسات</li>
+              <li data-i18n="paths.item2.list1">Organize peaceful gatherings</li>
+              <li data-i18n="paths.item2.list2">Engage civic organizations</li>
+              <li data-i18n="paths.item2.list3">Bring the story to institutions</li>
             </ul>
             <hr />
-            <a class="path-link" href="#timeline">اطّلع على الخطة →</a>
+            <a class="path-link" href="#timeline" data-i18n="paths.item2.link">View the timeline →</a>
           </article>
 
           <article class="path-block">
             <header class="path-block__header">
               <span class="path-icon"><i class="fas fa-gavel"></i></span>
-              <h3>سياسياً</h3>
-              <span class="path-pill">قنوات القرار</span>
+              <h3 data-i18n="paths.item3.title">Policy advocacy</h3>
+              <span class="path-pill" data-i18n="paths.item3.pill">Decision-making channels</span>
             </header>
-            <p class="path-summary">
-              النزاعات الدولية تحتاج ضغطاً منظماً ورسالة واضحة لصناع القرار.
+            <p class="path-summary" data-i18n="paths.item3.summary">
+              International disputes need coordinated pressure and a clear message for policymakers.
             </p>
             <ul>
-              <li>مخاطبة صناع القرار</li>
-              <li>الضغط عبر القنوات الرسمية</li>
-              <li>تحريك المواقف الدولية</li>
+              <li data-i18n="paths.item3.list1">Brief decision-makers</li>
+              <li data-i18n="paths.item3.list2">Pressure via official channels</li>
+              <li data-i18n="paths.item3.list3">Shift international positions</li>
             </ul>
             <hr />
-            <a class="path-link" href="#audience">تعرّف على الفئات →</a>
+            <a class="path-link" href="#audience" data-i18n="paths.item3.link">Meet the audiences →</a>
           </article>
 
           <article class="path-block">
             <header class="path-block__header">
               <span class="path-icon"><i class="fas fa-balance-scale"></i></span>
-              <h3>قانونياً</h3>
-              <span class="path-pill">مسار العدالة</span>
+              <h3 data-i18n="paths.item4.title">Legal support</h3>
+              <span class="path-pill" data-i18n="paths.item4.pill">Justice pathways</span>
             </header>
-            <p class="path-summary">
-              دعم الملفات الحقوقية ليبقى صمت المعتقلين في مرافعات العدالة.
+            <p class="path-summary" data-i18n="paths.item4.summary">
+              Legal files keep detainees’ voices alive within justice proceedings.
             </p>
             <ul>
-              <li>دعم الملفات الحقوقية</li>
-              <li>تمكين المسار القانوني</li>
-              <li>إشراك المؤسسات المختصة</li>
+              <li data-i18n="paths.item4.list1">Document legal cases</li>
+              <li data-i18n="paths.item4.list2">Strengthen legal follow-up</li>
+              <li data-i18n="paths.item4.list3">Partner with specialized institutions</li>
             </ul>
             <hr />
-            <a class="path-link" href="#message">ارجع للرسالة →</a>
+            <a class="path-link" href="#message" data-i18n="paths.item4.link">Return to the message →</a>
           </article>
         </div>
       </div>
@@ -344,8 +360,9 @@
     <section class="timeline-section" id="timeline">
       <div class="container">
         <div class="section-title">
-          <h2>خطة عمل تمتد لستة أشهر</h2>
-          <p>خطوات مصممة لتراكم الضغط الدولي وتحويله إلى تغيير ملموس.</p>
+          <h2 data-i18n="timeline.title">Six-month accountability timeline</h2>
+          <p data-i18n="timeline.description">Steps designed to accumulate international pressure and turn it into
+            measurable change.</p>
         </div>
 
         <div class="timeline-preview">
@@ -363,7 +380,7 @@
               <div class="timeline-note message" role="status" aria-live="polite">
                 <span class="timeline-note-icon"><i class="fas fa-clock"></i></span>
                 <div class="timeline-note-body">
-                  <p class="note-title">قريباً ... انتظرونا في خطة الشهر الأول</p>
+                  <p class="note-title" data-i18n="timeline.note">Soon ... our first-month plan is coming.</p>
                 </div>
               </div>
             </article>
@@ -390,34 +407,41 @@
     <section class="target-audience" id="audience">
       <div class="container">
         <div class="section-title">
-          <h2>لمن نخاطب هذا العالم</h2>
-          <p>الحملة تضع كل صوت في المكان المناسب لتكبير الأثر وتراكم الضغط.</p>
+          <h2 data-i18n="audience.title">Who the campaign addresses</h2>
+          <p data-i18n="audience.description">Every voice is placed precisely to magnify impact and build cumulative
+            pressure.</p>
         </div>
 
         <div class="audience-grid">
           <article>
-            <h3>الرأي العام الغربي</h3>
-            <p>كسر اللامبالاة وبناء التعاطف من خلال سرد إنساني محترم.</p>
+            <h3 data-i18n="audience.person1.title">Western public opinion</h3>
+            <p data-i18n="audience.person1.description">Break apathy by building respectful empathy around detainees’
+              stories.</p>
           </article>
           <article>
-            <h3>الإعلام الدولي</h3>
-            <p>نقل الحقيقة بمسؤولية وعرض الأدلة دون تصعيد غير ضروري.</p>
+            <h3 data-i18n="audience.person2.title">International media</h3>
+            <p data-i18n="audience.person2.description">Present the facts responsibly, with evidence and without
+              unnecessary escalation.</p>
           </article>
           <article>
-            <h3>المنظمات الحقوقية</h3>
-            <p>تبني الملفات والضغط القانوني لحماية الأسرى داخل المؤسسات.</p>
+            <h3 data-i18n="audience.person3.title">Human-rights organizations</h3>
+            <p data-i18n="audience.person3.description">Adopt cases and sustain legal pressure to protect detainees
+              within institutions.</p>
           </article>
           <article>
-            <h3>المؤثرون</h3>
-            <p>توسيع دائرة التأثير وتأكيد الرسالة ضمن شبكات أوسع.</p>
+            <h3 data-i18n="audience.person4.title">Influencers</h3>
+            <p data-i18n="audience.person4.description">Expand the circle of influence and reinforce the message across
+              wider networks.</p>
           </article>
           <article>
-            <h3>النشطاء</h3>
-            <p>تحويل التضامن إلى فعل مدروس يصنع ضغطاً متراكمًا.</p>
+            <h3 data-i18n="audience.person5.title">Activists</h3>
+            <p data-i18n="audience.person5.description">Turn solidarity into deliberate actions that generate lasting
+              pressure.</p>
           </article>
           <article>
-            <h3>البرلمانيون</h3>
-            <p>نقل القضية للمؤسسات التشريعية وتثبيتها في ملفات السياسة الخارجية.</p>
+            <h3 data-i18n="audience.person6.title">Parliamentarians</h3>
+            <p data-i18n="audience.person6.description">Bring the issue to legislative chambers and embed it within
+              foreign-policy files.</p>
           </article>
         </div>
       </div>
@@ -427,11 +451,11 @@
       <div class="container">
         <div class="media-grid">
           <div class="media-intro">
-            <p class="section-kicker">مواد جاهزة</p>
-            <h2>مركز الإعلام</h2>
-            <p>
-              مجموعة من الملفات والمواد التي تخاطب المؤسسات الإعلامية والحقوقية بلهجة واضحة
-              وتحترم عمق الأزمة. الرسائل متوازنة، دقيقة، وقابلة للنشر.
+            <p class="section-kicker" data-i18n="media.kicker">Media resources</p>
+            <h2 data-i18n="media.title">Media center</h2>
+            <p data-i18n="media.description">
+              Ready-to-share assets for journalists and rights groups, balancing tone and precision while honoring the
+              gravity of the crisis.
             </p>
           </div>
 
@@ -439,26 +463,28 @@
             <article class="media-asset">
               <span class="media-icon"><i class="fas fa-bullhorn"></i></span>
               <div>
-                <h3>حزمة بيانات صحفية</h3>
-                <p>صياغات جاهزة للاقتباس والمشاركة مع وسائل الإعلام.</p>
+                <h3 data-i18n="media.asset1.title">Press briefings</h3>
+                <p data-i18n="media.asset1.description">Ready-made statements for media quotes and dissemination.</p>
               </div>
             </article>
             <article class="media-asset">
               <span class="media-icon"><i class="fas fa-file-alt"></i></span>
               <div>
-                <h3>قوالب منشورات</h3>
-                <p>نصوص قصيرة ومسؤولة قابلة للترجمة والنشر السريع.</p>
+                <h3 data-i18n="media.asset2.title">Post templates</h3>
+                <p data-i18n="media.asset2.description">Short, responsible copy ready for translation and rapid
+                  publishing.</p>
               </div>
             </article>
             <article class="media-asset">
               <span class="media-icon"><i class="fas fa-network-wired"></i></span>
               <div>
-                <h3>رسائل تواصل</h3>
-                <p>نماذج تواصل مع صحفيين ومؤسسات وشخصيات عامة.</p>
+                <h3 data-i18n="media.asset3.title">Outreach messages</h3>
+                <p data-i18n="media.asset3.description">Templates for engaging journalists, institutions, and public
+                  figures.</p>
               </div>
             </article>
-            <p class="media-note">
-              يتم تحديث المواد وفق دورة أسبوعية لضمان الاتساق والأثر.
+            <p class="media-note" data-i18n="media.note">
+              Materials are refreshed weekly to keep messaging consistent and impactful.
             </p>
           </div>
         </div>
@@ -470,9 +496,9 @@
       <div id="copy-toast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive"
         aria-atomic="true">
         <div class="d-flex">
-          <div class="toast-body">تم نسخ رابط الصفحة.</div>
+          <div class="toast-body" data-i18n="toast.message">Link copied to clipboard.</div>
           <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-            aria-label="أغلق"></button>
+            data-i18n-aria="toast.closeLabel" aria-label="Close"></button>
         </div>
       </div>
     </div>
@@ -480,26 +506,27 @@
   <section class="contact-section" id="contact">
     <div class="container">
       <div class="section-title">
-        <h2>تواصل معنا</h2>
-        <p>لأي استفسار أو تعاون تواصلوا معنا عبر القنوات التالية. نرد بسرعة ومهنية.</p>
+        <h2 data-i18n="contact.title">Contact the team</h2>
+        <p data-i18n="contact.description">Reach out with media requests, testimony, or collaboration proposals. We
+          respond within 48 hours.</p>
       </div>
 
       <div class="contact-grid">
         <div class="contact-card">
           <span class="icon-badge contact-icon"><i class="fas fa-envelope"></i></span>
-          <h3>البريد الإلكتروني</h3>
+          <h3 data-i18n="contact.card1.title">Email inquiries</h3>
           <p><a href="mailto:info@freeprisoners.net">info@freeprisoners.net</a></p>
         </div>
 
         <div class="contact-card">
           <span class="icon-badge contact-icon"><i class="fab fa-telegram-plane"></i></span>
-          <h3>تلغرام</h3>
-          <p><a href="#" rel="noopener noreferrer"> freeprisoners@</a></p>
+          <h3 data-i18n="contact.card2.title">Telegram desk</h3>
+          <p><a href="#" rel="noopener noreferrer">freeprisoners@</a></p>
         </div>
 
         <div class="contact-card">
           <span class="icon-badge contact-icon"><i class="fas fa-phone-alt"></i></span>
-          <h3>هاتف</h3>
+          <h3 data-i18n="contact.card3.title">Phone</h3>
           <p><a href="tel:+970567782329">+970567782329</a></p>
         </div>
       </div>
@@ -509,9 +536,10 @@
   <footer class="site-footer">
     <div class="container">
       <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding-block:24px;">
-        <img src="./assets/img/logo w.png" alt="شعار الحملة" width="220" />
-        <p class="footer-note" style="margin:0;">
-          © 2026 من الصمت إلى الضغط · الحملة العالمية لإنقاذ الأسرى.
+        <img src="./assets/img/logo w.png" data-i18n-alt="header.brandLogoAlt" alt="Free Prisoners Global Campaign logo"
+          width="220" />
+        <p class="footer-note" style="margin:0;" data-i18n="footer.note">
+          © 2026 From Silence to Pressure · Free Prisoners Global Campaign.
         </p>
       </div>
     </div>
@@ -652,6 +680,495 @@
         const ok = await copyText(url);
         if (ok) showToast();
       }));
+    })();
+    const updateLangToggleButtons = (lang) => {
+      const labelKey = lang === 'en' ? 'switchToArabic' : 'switchToEnglish';
+      const langData = I18N[lang];
+      const label = langData?.langToggle?.[labelKey];
+
+      // keep it minimal and clear
+      const buttonText = lang === 'en' ? 'AR' : 'EN';
+
+      langToggleButtons.forEach((button) => {
+        button.textContent = buttonText;
+        if (label) button.setAttribute('aria-label', label);
+      });
+    };
+
+  </script>
+
+  <script defer>
+    (() => {
+      const LANG_KEY = 'site_lang';
+      const DEFAULT_LANG = 'en';
+      const I18N = {
+        en: {
+          meta: {
+            title: "Free Prisoners Global Campaign | Rights for All",
+            description: "A global human-rights coalition demanding the release of unjustly detained people and accountability for unlawful detention practices.",
+            ogTitle: "Free Prisoners Global Campaign | Rights for All",
+            ogDescription: "A global human-rights coalition demanding the release of unjustly detained people and accountability for unlawful detention practices.",
+            ogSiteName: "Free Prisoners Global Campaign",
+            ogLocale: "en_US",
+            ogImageAlt: "From Silence to Pressure - Free Prisoners Global Campaign",
+            twitterTitle: "Free Prisoners Global Campaign | Rights for All",
+            twitterDescription: "A global human-rights coalition demanding the release of unjustly detained people and accountability for unlawful detention practices.",
+            twitterImageAlt: "From Silence to Pressure - Free Prisoners Global Campaign",
+            jsonLd: {
+              name: "Free Prisoners Global Campaign",
+              description: "A global human-rights coalition demanding the release of unjustly detained people and accountability for unlawful detention practices.",
+              inLanguage: "en"
+            }
+          },
+          header: {
+            skipLink: "Skip to main content",
+            brandLabel: "Go to the Free Prisoners Global Campaign homepage",
+            brandLogoAlt: "Free Prisoners Global Campaign logo",
+            navAria: "Primary navigation",
+            navActionContact: "Contact the campaign",
+            navToggle: "Open navigation menu"
+          },
+          nav: {
+            home: "Home",
+            message: "Our message",
+            paths: "Action pathways",
+            timeline: "Timeline",
+            audience: "Audience",
+            media: "Media center"
+          },
+          mobile: {
+            menuLabel: "Mobile navigation",
+            closeMenu: "Close navigation menu",
+            navAria: "Mobile navigation links",
+            copyButton: "Copy page link",
+            hint: "Share this page to keep the campaign call for justice visible across your networks."
+          },
+          hero: {
+            kicker: "Solidarity for the detained",
+            title: "Free the prisoners, uphold their rights",
+            subtitle: "An international human-rights campaign turning silence into coordinated pressure, documenting prison abuses, demanding legal protection, and pushing for the release of unfairly detained women, children, and administrative detainees.",
+            trust1: "• 120+ solidarity partners",
+            trust2: "• 40 documented testimonies",
+            trust3: "• 30 human-rights defenders",
+            imageAlt: "Symbolic illustration: world map with broken chain links"
+          },
+          campaign: {
+            title: "Campaign message and goals",
+            description: "The campaign rests on a human-rights commitment to elevate detainees’ rights and open windows for sustained pressure.",
+            block1: {
+              title: "Restore their voices",
+              description: "We bring detainees’ stories to global audiences, shifting silence into clear actions that protect their dignity."
+            },
+            block2: {
+              title: "The urgency today",
+              description: "Escalating tensions worsen detainees’ suffering, so organized pressure today shields their rights and eases the burden on families tomorrow."
+            },
+            block3: {
+              title: "Our demands",
+              list1: "Protect detainees and their dignity",
+              list2: "End harsh treatment",
+              list3: "Release women and children",
+              list4: "Hold responsible actors accountable"
+            }
+          },
+          paths: {
+            title: "Paths toward accountability",
+            description: "Clear pathways bring pressure to life and give every supporter a sense of responsibility.",
+            item1: {
+              title: "Document & amplify",
+              pill: "Narrative documentation",
+              summary: "Raising detainees’ voices through organized reporting that links personal accounts to institutional pressure.",
+              list1: "Challenge dominant narratives",
+              list2: "Share verified testimonies",
+              list3: "Support international coverage",
+              link: "Explore the media hub →"
+            },
+            item2: {
+              title: "Community mobilization",
+              pill: "Civic partnerships",
+              summary: "Peaceful actions that connect civil society with detainees and demonstrate meaningful solidarity.",
+              list1: "Organize peaceful gatherings",
+              list2: "Engage civic organizations",
+              list3: "Bring the story to institutions",
+              link: "View the timeline →"
+            },
+            item3: {
+              title: "Policy advocacy",
+              pill: "Decision-making channels",
+              summary: "International disputes need coordinated pressure and a clear message for policymakers.",
+              list1: "Brief decision-makers",
+              list2: "Pressure via official channels",
+              list3: "Shift international positions",
+              link: "Meet the audiences →"
+            },
+            item4: {
+              title: "Legal support",
+              pill: "Justice pathways",
+              summary: "Legal files keep detainees’ voices alive within justice proceedings.",
+              list1: "Document legal cases",
+              list2: "Strengthen legal follow-up",
+              list3: "Partner with specialized institutions",
+              link: "Return to the message →"
+            }
+          },
+          timeline: {
+            title: "Six-month accountability timeline",
+            description: "Steps designed to accumulate international pressure and turn it into measurable change.",
+            note: "Soon ... our first-month plan is coming."
+          },
+          audience: {
+            title: "Who the campaign addresses",
+            description: "Every voice is placed precisely to magnify impact and build cumulative pressure.",
+            person1: {
+              title: "Western public opinion",
+              description: "Break apathy by building respectful empathy around detainees’ stories."
+            },
+            person2: {
+              title: "International media",
+              description: "Present the facts responsibly, with evidence and without unnecessary escalation."
+            },
+            person3: {
+              title: "Human-rights organizations",
+              description: "Adopt cases and sustain legal pressure to protect detainees within institutions."
+            },
+            person4: {
+              title: "Influencers",
+              description: "Expand the circle of influence and reinforce the message across wider networks."
+            },
+            person5: {
+              title: "Activists",
+              description: "Turn solidarity into deliberate actions that generate lasting pressure."
+            },
+            person6: {
+              title: "Parliamentarians",
+              description: "Bring the issue to legislative chambers and embed it within foreign-policy files."
+            }
+          },
+          media: {
+            kicker: "Media resources",
+            title: "Media center",
+            description: "Ready-to-share assets for journalists and rights groups, balancing tone and precision while honoring the gravity of the crisis.",
+            asset1: {
+              title: "Press briefings",
+              description: "Ready-made statements for media quotes and dissemination."
+            },
+            asset2: {
+              title: "Post templates",
+              description: "Short, responsible copy ready for translation and rapid publishing."
+            },
+            asset3: {
+              title: "Outreach messages",
+              description: "Templates for engaging journalists, institutions, and public figures."
+            },
+            note: "Materials are refreshed weekly to keep messaging consistent and impactful."
+          },
+          toast: {
+            message: "Link copied to clipboard.",
+            closeLabel: "Close"
+          },
+          contact: {
+            title: "Contact the team",
+            description: "Reach out with media requests, testimony, or collaboration proposals. We respond within 48 hours.",
+            card1: "Email inquiries",
+            card2: "Telegram desk",
+            card3: "Phone"
+          },
+          footer: {
+            note: "© 2026 From Silence to Pressure · Free Prisoners Global Campaign."
+          },
+          langToggle: {
+            switchToArabic: "Switch to Arabic",
+            switchToEnglish: "Switch to English"
+          }
+        },
+        ar: {
+          meta: {
+            title: "الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط",
+            description: "حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي.",
+            ogTitle: "الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط",
+            ogDescription: "حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي.",
+            ogSiteName: "الحملة العالمية لإنقاذ الأسرى",
+            ogLocale: "ar_AR",
+            ogImageAlt: "من الصمت إلى الضغط - الحملة العالمية لإنقاذ الأسرى",
+            twitterTitle: "الحملة العالمية لإنقاذ الأسرى | من الصمت إلى الضغط",
+            twitterDescription: "حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي.",
+            twitterImageAlt: "من الصمت إلى الضغط - الحملة العالمية لإنقاذ الأسرى",
+            jsonLd: {
+              name: "الحملة العالمية لإنقاذ الأسرى",
+              description: "حملة إعلامية إنسانية عالمية لتحويل الصمت إلى ضغط منظم يحمي الحقوق ويرفع قضية الأسرى إلى واجهة الرأي العام الدولي.",
+              inLanguage: "ar"
+            }
+          },
+          header: {
+            skipLink: "تخطي إلى المحتوى",
+            brandLabel: "العودة إلى بداية الصفحة",
+            brandLogoAlt: "شعار الحملة",
+            navAria: "أقسام الصفحة",
+            navActionContact: "تواصل معنا",
+            navToggle: "فتح القائمة"
+          },
+          nav: {
+            home: "الرئيسية",
+            message: "الرسالة",
+            paths: "المسارات",
+            timeline: "الخطة",
+            audience: "الفئات",
+            media: "مركز الإعلام"
+          },
+          mobile: {
+            menuLabel: "قائمة التنقل",
+            closeMenu: "إغلاق القائمة",
+            navAria: "أقسام الصفحة (موبايل)",
+            copyButton: "نسخ رابط الصفحة",
+            hint: "انسخ الرابط وشاركه على واتساب أو فيسبوك أو تويتر."
+          },
+          hero: {
+            kicker: "من الصمت إلى الضغط",
+            title: "الحملة العالمية لإنقاذ الأسرى",
+            subtitle: "حملة إعلامية إنسانية عالمية تهدف إلى نقل قضية الأسرى من دائرة الصمت إلى مساحة الضغط الدولي الفعّال، عبر كشف واقع السجون والانتهاكات، والمطالبة بحماية الحقوق، وتحسين ظروف الاعتقال وفق القانون الدولي، والعمل من أجل الإفراج عن النساء والأطفال والمعتقلين الإداريين، ودعم مسار المساءلة.",
+            trust1: "• صوت الأسرى",
+            trust2: "• توثيق مسؤول",
+            trust3: "• ضغط دولي فعّال",
+            imageAlt: "صورة رمزية: خريطة العالم وسلسلة مكسورة بشكل رمزي"
+          },
+          campaign: {
+            title: "الرسالة والأهداف",
+            description: "مضمون الحملة ينبض بالتزام إنساني لرفع راية الحقوق وفتح نوافذ الضغط.",
+            block1: {
+              title: "رسالة الحملة",
+              description: "نعيد للأسرى وجههم أمام المجتمعات ونحوّل الصمت الدولي إلى مطالب واضحة تحمي كرامتهم وتعيد لهم وجودهم في الخطاب الإنساني العالمي."
+            },
+            block2: {
+              title: "لماذا الآن",
+              description: "التوتر المتصاعد خارج الحدود يضاعف معاناة الأسرى، لذا لا ننتظر الأمل أن ينبع من الصمت؛ الضغط المنظم اليوم يحمي حقوقهم وغداً يخفف عن ذويهم."
+            },
+            block3: {
+              title: "ما الذي نطالب به",
+              list1: "حماية الأسرى وكرامتهم",
+              list2: "وقف الممارسات القاسية",
+              list3: "الإفراج عن النساء والأطفال",
+              list4: "محاسبة المسؤولين"
+            }
+          },
+          paths: {
+            title: "كيف يمكنك أن تُحدث أثراً",
+            description: "مسارات واضحة تقرّب الضغط من الواقع وتمنحك خارطة مسؤولية.",
+            item1: {
+              title: "إعلامياً",
+              pill: "توثيق الرواية",
+              summary: "رفع صوت الأسرى عبر تقارير منظمة يربط بين السرد الإنساني والضغط المؤسسي.",
+              list1: "كسر الرواية السائدة",
+              list2: "نشر القصص الموثقة",
+              list3: "دعم التغطية الدولية",
+              link: "اذهب إلى مركز الإعلام →"
+            },
+            item2: {
+              title: "ميدانياً",
+              pill: "تعبئة الفضاء المدني",
+              summary: "فعاليات سلمية تربط المجتمع المدني بأسرى اليوم وتؤكد التضامن الفاعل.",
+              list1: "تنظيم فعاليات سلمية",
+              list2: "إشراك المجتمع المدني",
+              list3: "إيصال الصوت للمؤسسات",
+              link: "اطّلع على الخطة →"
+            },
+            item3: {
+              title: "سياسياً",
+              pill: "قنوات القرار",
+              summary: "النزاعات الدولية تحتاج ضغطاً منظماً ورسالة واضحة لصناع القرار.",
+              list1: "مخاطبة صناع القرار",
+              list2: "الضغط عبر القنوات الرسمية",
+              list3: "تحريك المواقف الدولية",
+              link: "تعرّف على الفئات →"
+            },
+            item4: {
+              title: "قانونياً",
+              pill: "مسار العدالة",
+              summary: "دعم الملفات الحقوقية ليبقى صمت المعتقلين في مرافعات العدالة.",
+              list1: "دعم الملفات الحقوقية",
+              list2: "تمكين المسار القانوني",
+              list3: "إشراك المؤسسات المختصة",
+              link: "ارجع للرسالة →"
+            }
+          },
+          timeline: {
+            title: "خطة عمل تمتد لستة أشهر",
+            description: "خطوات مصممة لتراكم الضغط الدولي وتحويله إلى تغيير ملموس.",
+            note: "قريباً ... انتظرونا في خطة الشهر الأول"
+          },
+          audience: {
+            title: "لمن نخاطب هذا العالم",
+            description: "الحملة تضع كل صوت في المكان المناسب لتكبير الأثر وتراكم الضغط.",
+            person1: {
+              title: "الرأي العام الغربي",
+              description: "كسر اللامبالاة وبناء التعاطف من خلال سرد إنساني محترم."
+            },
+            person2: {
+              title: "الإعلام الدولي",
+              description: "نقل الحقيقة بمسؤولية وعرض الأدلة دون تصعيد غير ضروري."
+            },
+            person3: {
+              title: "المنظمات الحقوقية",
+              description: "تبني الملفات والضغط القانوني لحماية الأسرى داخل المؤسسات."
+            },
+            person4: {
+              title: "المؤثرون",
+              description: "توسيع دائرة التأثير وتأكيد الرسالة ضمن شبكات أوسع."
+            },
+            person5: {
+              title: "النشطاء",
+              description: "تحويل التضامن إلى فعل مدروس يصنع ضغطاً متراكمًا."
+            },
+            person6: {
+              title: "البرلمانيون",
+              description: "نقل القضية للمؤسسات التشريعية وتثبيتها في ملفات السياسة الخارجية."
+            }
+          },
+          media: {
+            kicker: "مواد جاهزة",
+            title: "مركز الإعلام",
+            description: "مجموعة من الملفات والمواد التي تخاطب المؤسسات الإعلامية والحقوقية بلهجة واضحة وتحترم عمق الأزمة. الرسائل متوازنة، دقيقة، وقابلة للنشر.",
+            asset1: {
+              title: "حزمة بيانات صحفية",
+              description: "صياغات جاهزة للاقتباس والمشاركة مع وسائل الإعلام."
+            },
+            asset2: {
+              title: "قوالب منشورات",
+              description: "نصوص قصيرة ومسؤولة قابلة للترجمة والنشر السريع."
+            },
+            asset3: {
+              title: "رسائل تواصل",
+              description: "نماذج تواصل مع صحفيين ومؤسسات وشخصيات عامة."
+            },
+            note: "يتم تحديث المواد وفق دورة أسبوعية لضمان الاتساق والأثر."
+          },
+          toast: {
+            message: "تم نسخ رابط الصفحة.",
+            closeLabel: "أغلق"
+          },
+          contact: {
+            title: "تواصل معنا",
+            description: "لأي استفسار أو تعاون تواصلوا معنا عبر القنوات التالية. نرد بسرعة ومهنية.",
+            card1: "البريد الإلكتروني",
+            card2: "تلغرام",
+            card3: "هاتف"
+          },
+          footer: {
+            note: "© 2026 من الصمت إلى الضغط · الحملة العالمية لإنقاذ الأسرى."
+          },
+          langToggle: {
+            switchToArabic: "التبديل إلى العربية",
+            switchToEnglish: "التبديل إلى الإنجليزية"
+          }
+        }
+      };
+
+      const htmlEl = document.documentElement;
+      let currentLang = DEFAULT_LANG;
+      let langToggleButtons = [];
+
+      const translationSets = [
+        { dataAttr: 'i18n', setter: (el, value) => { el.textContent = value; } },
+        { dataAttr: 'i18nAlt', setter: (el, value) => el.setAttribute('alt', value) },
+        { dataAttr: 'i18nAria', setter: (el, value) => el.setAttribute('aria-label', value) },
+      ];
+
+      const getStoredLanguage = () => {
+        const stored = localStorage.getItem(LANG_KEY);
+        return stored && I18N[stored] ? stored : DEFAULT_LANG;
+      };
+
+      const resolveValue = (lang, key) => {
+        const parts = (key || '').split('.');
+        return parts.reduce((value, part) => (value && value[part] !== undefined ? value[part] : undefined), I18N[lang]);
+      };
+
+      const setMetaValue = (selector, attr, value) => {
+        if (!value) return;
+        const el = document.querySelector(selector);
+        if (el) el.setAttribute(attr, value);
+      };
+
+      const updateMetaTags = (meta) => {
+        if (!meta) return;
+        if (meta.title) document.title = meta.title;
+        setMetaValue('meta[name=\"description\"]', 'content', meta.description);
+        setMetaValue('meta[property=\"og:title\"]', 'content', meta.ogTitle);
+        setMetaValue('meta[property=\"og:description\"]', 'content', meta.ogDescription);
+        setMetaValue('meta[property=\"og:site_name\"]', 'content', meta.ogSiteName);
+        setMetaValue('meta[property=\"og:locale\"]', 'content', meta.ogLocale);
+        setMetaValue('meta[property=\"og:image:alt\"]', 'content', meta.ogImageAlt);
+        setMetaValue('meta[name=\"twitter:title\"]', 'content', meta.twitterTitle);
+        setMetaValue('meta[name=\"twitter:description\"]', 'content', meta.twitterDescription);
+        setMetaValue('meta[name=\"twitter:image:alt\"]', 'content', meta.twitterImageAlt);
+      };
+
+      const updateJsonLd = (meta) => {
+        if (!meta || !meta.jsonLd) return;
+        const scriptEl = document.querySelector('script[type=\"application/ld+json\"]');
+        if (!scriptEl) return;
+        try {
+          const data = JSON.parse(scriptEl.textContent);
+          data.name = meta.jsonLd.name || data.name;
+          data.description = meta.jsonLd.description || data.description;
+          data.inLanguage = meta.jsonLd.inLanguage || data.inLanguage;
+          scriptEl.textContent = JSON.stringify(data, null, 2);
+        } catch (_) {
+          // ignore parse errors
+        }
+      };
+
+      const updateLangToggleButtons = (lang) => {
+        const labelKey = lang === 'en' ? 'switchToArabic' : 'switchToEnglish';
+        const langData = I18N[lang];
+        const label = langData && langData.langToggle && langData.langToggle[labelKey];
+        const buttonText = lang === 'en' ? 'AR' : 'EN';
+        langToggleButtons.forEach((button) => {
+          button.textContent = buttonText;
+          if (label) button.setAttribute('aria-label', label);
+        });
+      };
+
+      const applyTranslations = (lang) => {
+        translationSets.forEach(({ dataAttr, setter }) => {
+          document.querySelectorAll(`[data-${dataAttr}]`).forEach((el) => {
+            const key = el.dataset[dataAttr];
+            const value = resolveValue(lang, key);
+            if (value) setter(el, value);
+          });
+        });
+        const langData = I18N[lang];
+        const meta = langData && langData.meta;
+        if (meta) {
+          updateMetaTags(meta);
+          updateJsonLd(meta);
+        }
+        htmlEl.lang = lang;
+        htmlEl.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        updateLangToggleButtons(lang);
+      };
+
+      const setLanguage = (lang, persist = true) => {
+        if (!I18N[lang]) return;
+        currentLang = lang;
+        if (persist) {
+          try {
+            localStorage.setItem(LANG_KEY, lang);
+          } catch (_) { }
+        }
+        applyTranslations(lang);
+      };
+
+      document.addEventListener('DOMContentLoaded', () => {
+        langToggleButtons = Array.from(document.querySelectorAll('[data-lang-toggle]'));
+        const storedLang = getStoredLanguage();
+        setLanguage(storedLang, false);
+        langToggleButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const nextLang = currentLang === 'en' ? 'ar' : 'en';
+            setLanguage(nextLang);
+          });
+        });
+      });
     })();
   </script>
 

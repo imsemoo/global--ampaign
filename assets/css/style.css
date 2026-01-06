@@ -266,6 +266,7 @@ section {
 .nav-actions {
   display: flex;
   align-items: center;
+  gap: var(--space-3);
 }
 
 .btn {
@@ -1831,5 +1832,88 @@ body.is-menu-open {
 
   .about-story-text {
     gap: var(--space-2);
+  }
+}
+
+/* =========================
+   Language Toggle (Light Header / Dark Button)
+========================== */
+.lang-toggle {
+  --lt-bg: rgba(12, 16, 20, 0.92);
+  --lt-border: rgba(12, 16, 20, 0.18);
+  --lt-text: rgba(255, 255, 255, 0.92);
+  --lt-hover-bg: rgba(12, 16, 20, 0.98);
+  --lt-hover-border: rgba(12, 16, 20, 0.26);
+  --lt-focus: rgba(130, 91, 255, 0.42);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 12px;
+  border-radius: 999px;
+
+  background: var(--lt-bg);
+  border: 1px solid var(--lt-border);
+  color: var(--lt-text);
+
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  line-height: 1;
+
+  box-shadow:
+    0 10px 24px rgba(12, 16, 20, 0.12),
+    0 2px 6px rgba(12, 16, 20, 0.10);
+
+  transition: background 160ms ease, border-color 160ms ease, transform 120ms ease, box-shadow 160ms ease;
+}
+
+.lang-toggle::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.10);
+
+  transition: background 160ms ease, box-shadow 160ms ease;
+}
+
+.lang-toggle:hover {
+  background: var(--lt-hover-bg);
+  border-color: var(--lt-hover-border);
+  transform: translateY(-1px);
+  box-shadow:
+    0 14px 34px rgba(12, 16, 20, 0.14),
+    0 4px 10px rgba(12, 16, 20, 0.12);
+}
+
+.lang-toggle:active {
+  transform: translateY(0);
+}
+
+.lang-toggle:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 4px var(--lt-focus),
+    0 14px 34px rgba(12, 16, 20, 0.14);
+}
+
+/* Active language indicator */
+html[lang="ar"] .lang-toggle::before {
+  background: rgba(130, 91, 255, 0.95);
+  box-shadow: 0 0 0 3px rgba(130, 91, 255, 0.22);
+}
+
+html[lang="en"] .lang-toggle::before {
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 420px) {
+  .lang-toggle {
+    padding: 9px 10px;
+    gap: 8px;
   }
 }
